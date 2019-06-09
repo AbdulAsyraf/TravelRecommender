@@ -92,7 +92,7 @@
 )
 
 (defrule isolate
-    (declare(salience 3))
+    (declare(salience 5))
     (destination ?destination)
     ;?counterAdd <- (counter ?counter)
     ?f <- (place ?label ? ? ? ?)
@@ -113,10 +113,22 @@
 
     =>
 
-    (bind ?suggest (+ (mod (random) 2) 1))
+    (bind ?suggest (+ (mod (random) 4) 1))
     (retract ?destAdd)
     (assert(suggest ?suggest))
 )
+
+(defrule outputIntroLeisure
+    (declare(salience 3))
+    (triptype isleisure)
+    (leisureType ?leisureType)
+
+    =>
+
+    (printout t "We suggest that you go on a " ?leisureType " trip at any of the following locations" crlf)
+)
+
+
 
 (defrule makeSuggestionLong
     (declare(salience 2))
@@ -134,22 +146,22 @@
     (declare(salience 1))
     (length short)
     (suggest ?suggest)
-    (place ? ?country ?location ? ?suggest)
+    (place ? ?country ?location ?suggest ?)
 
     =>
 
-    (printout t ?country "    " ?location crlf)
+    (printout t ?location " in " ?country crlf)
 )
 
 (defrule suggestLong
     (declare(salience 1))
     (length long)
     (suggest ?suggest)
-    (place ? ?country ?location ? ?)
+    (place ? ?country ?location ? ?suggest)
 
     =>
 
-    (printout t ?country "    " ?location crlf)
+    (printout t ?location " in " ?country crlf)
 )
 
 (defrule b1

@@ -102,7 +102,8 @@
 	(assert (who friends))
 	(ask-question-integer "Q: How many participants will there be?[(integers)]" size)
 	(ask-question-integer "Q: How long is the trip?(in days) [(integers)]" duration)
-	(ask-question-integer "Q: How much is your budget?(per person in MYR) [(integers)]" budget))
+	(ask-question-integer "Q: How much is your budget?(per person in MYR) [(integers)]" budget)
+	(printout t "We suggest that you go on a business trip at any of the following locations" crlf))
 
 
 (defrule leisure 
@@ -128,5 +129,6 @@
 	(ask-question "Q: Do you prefer the sports activities to involve equipments? [yes/no]" equipment yes no)
 	(ask-question "Q: Do you prefer sports with teamwork? [yes/no]" team yes no)
 	(ask-question "Q: Do you prefer sports that requires professional license? [yes/no]" license yes no)
-	(ask-question "Q: Do you prefer fast-paced sports or slow-paced sports? [fast/slow]" pace fast slow))
+	(ask-question "Q: Do you prefer fast-paced sports or slow-paced sports? [fast/slow]" pace fast slow)
+	(printout t "We suggest that you go on a sports trip at any of the following locations" crlf))
 
