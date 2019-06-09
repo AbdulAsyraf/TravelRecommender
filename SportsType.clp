@@ -32,7 +32,7 @@
     (equipment yes)
     (team yes)
     (license no)
-    (pace sloq)
+    (pace slow)
 
     =>
 

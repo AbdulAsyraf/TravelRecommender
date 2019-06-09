@@ -1,5 +1,5 @@
 (defrule Shopping1
-    (leisureType shopping)
+    (leisureType Shopping)
     (groupType smallFamily)
     (travelBudget shortCheap)
 
@@ -9,7 +9,7 @@
 )
 
 (defrule Shopping2
-    (leisureType shopping)
+    (leisureType Shopping)
     (groupType smallFamily)
     (travelBudget longCheap)
 
@@ -19,7 +19,7 @@
 )
 
 (defrule Shopping3
-    (leisureType shopping)
+    (leisureType Shopping)
     (groupType smallFamily)
     (travelBudget shortExp)
 
@@ -29,7 +29,7 @@
 )
 
 (defrule Shopping4
-    (leisureType shopping)
+    (leisureType Shopping)
     (groupType smallFamily)
     (travelBudget longExp)
 
@@ -39,7 +39,7 @@
 )
 
 (defrule Shopping5
-    (leisureType shopping)
+    (leisureType Shopping)
     (groupType mediumFamily)
     (travelBudget shortCheap)
 
@@ -49,7 +49,7 @@
 )
 
 (defrule Shopping6
-    (leisureType shopping)
+    (leisureType Shopping)
     (groupType mediumFamily)
     (travelBudget longCheap)
 
@@ -59,7 +59,7 @@
 )
 
 (defrule Shopping7
-    (leisureType shopping)
+    (leisureType Shopping)
     (groupType mediumFamily)
     (travelBudget shortExp)
 
@@ -69,7 +69,7 @@
 )
 
 (defrule Shopping8
-    (leisureType shopping)
+    (leisureType Shopping)
     (groupType mediumFamily)
     (travelBudget longExp)
 
@@ -79,7 +79,7 @@
 )
 
 (defrule Shopping9
-    (leisureType shopping)
+    (leisureType Shopping)
     (groupType largeFamily)
     (travelBudget shortCheap)
 
@@ -89,7 +89,7 @@
 )
 
 (defrule Shopping10
-    (leisureType shopping)
+    (leisureType Shopping)
     (groupType largeFamily)
     (travelBudget longCheap)
 
@@ -99,7 +99,7 @@
 )
 
 (defrule Shopping11
-    (leisureType shopping)
+    (leisureType Shopping)
     (groupType largeFamily)
     (travelBudget shortExp)
 
@@ -109,7 +109,7 @@
 )
 
 (defrule Shopping12
-    (leisureType shopping)
+    (leisureType Shopping)
     (groupType largeFamily)
     (travelBudget longExp)
 
@@ -119,7 +119,7 @@
 )
 
 (defrule Shopping13
-    (leisureType shopping)
+    (leisureType Shopping)
     (groupType smallFriends)
     (travelBudget shortCheap)
 
@@ -129,7 +129,7 @@
 )
 
 (defrule Shopping14
-    (leisureType shopping)
+    (leisureType Shopping)
     (groupType smallFriends)
     (travelBudget longCheap)
 
@@ -139,7 +139,7 @@
 )
 
 (defrule Shopping15
-    (leisureType shopping)
+    (leisureType Shopping)
     (groupType smallFriends)
     (travelBudget shortExp)
 
@@ -149,7 +149,7 @@
 )
 
 (defrule Shopping16
-    (leisureType shopping)
+    (leisureType Shopping)
     (groupType smallFriends)
     (travelBudget longExp)
 
@@ -159,7 +159,7 @@
 )
 
 (defrule Shopping17
-    (leisureType shopping)
+    (leisureType Shopping)
     (groupType mediumFriends)
     (travelBudget shortCheap)
 
@@ -169,7 +169,7 @@
 )
 
 (defrule Shopping18
-    (leisureType shopping)
+    (leisureType Shopping)
     (groupType mediumFriends)
     (travelBudget longCheap)
 
@@ -179,7 +179,7 @@
 )
 
 (defrule Shopping19
-    (leisureType shopping)
+    (leisureType Shopping)
     (groupType mediumFriends)
     (travelBudget shortExp)
 
@@ -189,7 +189,7 @@
 )
 
 (defrule Shopping20
-    (leisureType shopping)
+    (leisureType Shopping)
     (groupType mediumFriends)
     (travelBudget longExp)
 
@@ -199,7 +199,7 @@
 )
 
 (defrule Shopping21
-    (leisureType shopping)
+    (leisureType Shopping)
     (groupType largeFriends)
     (travelBudget shortCheap)
 
@@ -209,7 +209,7 @@
 )
 
 (defrule Shopping22
-    (leisureType shopping)
+    (leisureType Shopping)
     (groupType largeFriends)
     (travelBudget longCheap)
 
@@ -219,7 +219,7 @@
 )
 
 (defrule Shopping23
-    (leisureType shopping)
+    (leisureType Shopping)
     (groupType largeFriends)
     (travelBudget shortExp)
 
@@ -229,7 +229,7 @@
 )
 
 (defrule Shopping24
-    (leisureType shopping)
+    (leisureType Shopping)
     (groupType largeFriends)
     (travelBudget longExp)
 

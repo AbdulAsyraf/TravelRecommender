@@ -24,7 +24,7 @@
 
     =>
 
-    (assert(leisureType food))
+    (assert(leisureType Food))
 )
 
 (defrule b3
@@ -34,7 +34,7 @@
 
     =>
 
-    (assert(leisureType shopping))
+    (assert(leisureType Shopping))
 )
 
 (defrule b4
@@ -44,7 +44,7 @@
 
     =>
 
-    (assert(leisureType sightseeing))
+    (assert(leisureType Sightseeing))
 )
 
 (defrule b5
@@ -55,7 +55,7 @@
 
     =>
 
-    (assert(leisureType education))
+    (assert(leisureType Education))
 )
 
 (defrule b6
@@ -66,7 +66,7 @@
 
     =>
 
-    (assert(leisureType sightseeing))
+    (assert(leisureType Sightseeing))
 )
 
 (defrule b7
@@ -76,7 +76,7 @@
 
     =>
 
-    (assert(leisureType food))
+    (assert(leisureType Food))
 )
 
 (defrule b8
@@ -87,7 +87,7 @@
 
     =>
 
-    (assert(leisureType education))
+    (assert(leisureType Education))
 )
 
 (defrule b9
@@ -98,7 +98,7 @@
 
     =>
 
-    (assert(leisureType food))
+    (assert(leisureType Food))
 )
 
 (defrule b10
@@ -108,7 +108,7 @@
 
     =>
 
-    (assert(leisureType sightseeing))
+    (assert(leisureType Sightseeing))
 )
 
 (defrule b11
@@ -119,7 +119,7 @@
 
     =>
 
-    (assert(leisureType education))
+    (assert(leisureType Education))
 )
 
 (defrule b12

@@ -1,4 +1,5 @@
 (defrule Business1
+    (triptype isbusiness)
     (groupType smallFriends)
     (travelBudget shortCheap)
 
@@ -8,6 +9,7 @@
 )
 
 (defrule Business2
+    (triptype isbusiness)
     (groupType smallFriends)
     (travelBudget longCheap)
 
@@ -17,6 +19,7 @@
 )
 
 (defrule Business3
+    (triptype isbusiness)
     (groupType smallFriends)
     (travelBudget shortExp)
 
@@ -26,6 +29,7 @@
 )
 
 (defrule Business4
+    (triptype isbusiness)
     (groupType smallFriends)
     (travelBudget longExp)
 
@@ -35,6 +39,7 @@
 )
 
 (defrule Business5
+    (triptype isbusiness)
     (groupType mediumFriends)
     (travelBudget shortCheap)
 
@@ -44,6 +49,7 @@
 )
 
 (defrule Business6
+    (triptype isbusiness)
     (groupType mediumFriends)
     (travelBudget longCheap)
 
@@ -53,6 +59,7 @@
 )
 
 (defrule Business7
+    (triptype isbusiness)
     (groupType mediumFriends)
     (travelBudget shortExp)
 
@@ -62,6 +69,7 @@
 )
 
 (defrule Business8
+    (triptype isbusiness)
     (groupType mediumFriends)
     (travelBudget longExp)
 
@@ -71,6 +79,7 @@
 )
 
 (defrule Business9
+    (triptype isbusiness)
     (groupType largeFriends)
     (travelBudget shortCheap)
 
@@ -80,6 +89,7 @@
 )
 
 (defrule Business10
+    (triptype isbusiness)
     (groupType largeFriends)
     (travelBudget longCheap)
 
@@ -89,6 +99,7 @@
 )
 
 (defrule Business11
+    (triptype isbusiness)
     (groupType largeFriends)
     (travelBudget shortExp)
 
@@ -98,6 +109,7 @@
 )
 
 (defrule Business12
+    (triptype isbusiness)
     (groupType largeFriends)
     (travelBudget longExp)
 
