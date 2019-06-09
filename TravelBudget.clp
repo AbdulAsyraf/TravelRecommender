@@ -1,7 +1,7 @@
 (defrule shortCheap
     (duration ?time)
     (budget ?budget)
-    (not(test(> ?time 1)))
+    (not(test(> ?time 7)))
     (test (<= ?budget 3000))
 
     =>
@@ -12,7 +12,7 @@
 (defrule shortExp
     (duration ?time)
     (budget ?budget)
-    (not(test(> ?time 1)))
+    (not(test(> ?time 7)))
     (test (> ?budget 3000))
 
     =>
@@ -23,7 +23,7 @@
 (defrule longCheap
     (duration ?time)
     (budget ?budget)
-    (test(> ?time 1))
+    (test(> ?time 7))
     (test (<= ?budget 3000))
 
     =>
@@ -34,7 +34,7 @@
 (defrule longExp
     (duration ?time)
     (budget ?budget)
-    (test(> ?time 1))
+    (test(> ?time 7))
     (test (> ?budget 3000))
 
     =>
