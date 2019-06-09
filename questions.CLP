@@ -46,7 +46,7 @@
 (deffunction ask-question-integer (?question ?fact)
    (printout t ?question crlf)
    (bind ?answer (read))
-   (if (integerp ?answer) 
+   (if (and(integerp ?answer)(not(= 0 ?answer)))
        then 
 		(if (eq size ?fact)
 			then (assert (size ?answer)))
@@ -54,11 +54,11 @@
 				then (assert (duration ?answer)))
 					(if (eq budget ?fact)
 						then (assert (budget ?answer))))
-   (while (not (integerp ?answer)) do
+   (while (or(not (integerp ?answer))(= 0 ?answer)) do
 	(printout t "Invalid input. Try again." crlf)
       (printout t ?question crlf)
       (bind ?answer (read))
-      (if (integerp ?answer) 
+      (if (and(integerp ?answer)(not(= 0 ?answer))) 
           then 
 		(if (eq size ?fact)
 			then (assert (size ?answer)))
@@ -85,6 +85,16 @@
 	(not (triptype isleisure))
 =>
 (ask-question "Q: Is this a sports trip? [yes/no]" issport yes no))
+
+(defrule check
+	(declare (salience 600))
+	(not (triptype isbusiness))
+	(not (triptype isleisure))
+	(not (triptype issport))
+=>
+(printout t "A trip type is required to continue. Please choose one." crlf)
+(reset)
+(run))
 
 (defrule business
  	(triptype isbusiness)
@@ -114,9 +124,9 @@
 	(ask-question-integer "Q: How many participants will there be? [(integers)]" size )
 	(ask-question-integer "Q: How long is the trip?(in days) [(integers)]" duration )
 	(ask-question-integer "Q: How much is your budget?(per person in MYR) [(integers)]" budget )
-	(ask-question "Q: Do you prefer indoor sports or outdoor sports? [indoor/outdoor]" location indoor outdoor )
-	(ask-question "Q: Do you prefer the sports activities to involve equipments? [yes/no]" equipment yes no )
+	(ask-question "Q: Do you prefer indoor sports or outdoor sports? [indoor/outdoor]" location indoor outdoor)
+	(ask-question "Q: Do you prefer the sports activities to involve equipments? [yes/no]" equipment yes no)
 	(ask-question "Q: Do you prefer sports with teamwork? [yes/no]" team yes no)
-	(ask-question "Q: Do you prefer sports that requires professional license? [yes/no]" license yes no )
+	(ask-question "Q: Do you prefer sports that requires professional license? [yes/no]" license yes no)
 	(ask-question "Q: Do you prefer fast-paced sports or slow-paced sports? [fast/slow]" pace fast slow))
 
